@@ -20,7 +20,7 @@ To initialize the workspace and construct an isolated runtime layout on your loc
 
 ```bash
 # Clone the project directory structure
-git clone [https://github.com/ayushyadav10/Ayush_Yadav_Cobblestone.git](https://github.com/ayushyadav10/Ayush_Yadav_Cobblestone.git)
+git clone https://github.com/ayushyadav10/Ayush_Yadav_Cobblestone.git
 
 # Move into the repository base
 cd Ayush_Yadav_Cobblestone
