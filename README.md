@@ -21,7 +21,7 @@ To initialize the workspace and construct an isolated runtime layout on your loc
 ```bash
 # Clone the project directory structure
 git clone https://github.com/ayushyadav10/Ayush_Yadav_Cobblestone.git
-cd Ayush_Yadav
+cd Ayush_Yadav_Cobblestone
 
 # Instantiate a localized virtual environment layer
 python -m venv myvenv
