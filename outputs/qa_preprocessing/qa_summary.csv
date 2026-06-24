@@ -1,0 +1,16 @@
+metric,value
+execution_time,2026-06-24 16:47:51
+total_rows,39072
+total_columns,18
+start_date,2022-01-01 00:00:00
+end_date,2026-06-16 23:00:00
+duplicate_timestamps,0
+is_monotonic_increasing,True
+structural_gap_hours,0
+missing_before_imputation,166
+missing_after_imputation,0
+physical_bound_errors,0
+max_price_flatline_hours,7
+max_load_flatline_hours,0
+max_wind_flatline_hours,1
+price_outlier_hours,391

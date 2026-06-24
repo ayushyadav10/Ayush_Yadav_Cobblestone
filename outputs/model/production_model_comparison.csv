@@ -1,0 +1,4 @@
+Model,Train_RMSE,Val_RMSE,Train_MAE,Val_MAE
+Baseline_1_Naive_D7,,57.732,,37.687
+Baseline_2_Ridge_Regression,23.149,19.271,15.482,12.549
+Main_Model_LightGBM,11.213,15.45,7.707,8.889

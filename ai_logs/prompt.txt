@@ -1,0 +1,32 @@
+You are a senior quantitative analyst on a European power trading desk.
+Write a concise daily market morning note for the German Day-Ahead electricity market.
+Use clear, professional financial language. Maximum 220 words.
+Structure your response with exactly three sections:
+1. CURVE POSITIONING VIEW
+2. CORE DRIVERS  
+3. INVALIDATION RISKS
+
+Use the following data to write the note:
+
+MODEL PERFORMANCE:
+- LightGBM CV RMSE: 15.45 EUR/MWh
+- LightGBM Holdout RMSE: 13.63 EUR/MWh
+- Error reduction vs Naive D-7 baseline: 73.2%
+
+TRADING VIEW FOR 2026-06-16:
+- Forecast fair value: 112.15 EUR/MWh
+- Prompt curve reference: 98.87 EUR/MWh
+- Baseload spread: +13.28 EUR/MWh (+13.4%)
+- Position signal: LONG
+- Confidence: MEDIUM
+
+KEY MARKET DRIVERS (from feature importance analysis):
+- Short-term price momentum (price_lag_1h is strongest predictor)
+- Residual load nonlinearity (hockey-stick merit order curve)
+- TTF gas price trajectory (strong positive relationship with DA prices)
+- Cyclical intraday demand patterns (evening peak 18:00-21:00)
+
+RISK INVALIDATION CONDITIONS:
+- Wind generation overshoots day-ahead forecast by more than 20%
+- TTF gas breaks below 30-day moving average support
+- Sudden demand collapse exceeding 10% intraday

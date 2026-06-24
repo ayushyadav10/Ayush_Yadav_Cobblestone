@@ -1,0 +1,8 @@
+
+myvenv/
+__pycache__/
+*.pyc
+.env
+.ipynb_checkpoints/
+.idea/
+*.log
