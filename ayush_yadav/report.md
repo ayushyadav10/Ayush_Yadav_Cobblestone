@@ -1,7 +1,6 @@
 # Technical Case Study: German Day-Ahead Power Price Forecasting & Prompt Curve Strategy
 
 **Author:** Ayush Yadav
-
 **Contact:** ayushydv2353@gmail.com
 ---
 
