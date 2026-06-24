@@ -1,29 +1,8 @@
 # Technical Case Study: German Day-Ahead Power Price Forecasting & Prompt Curve Strategy
 
 **Author:** Ayush Yadav
+
 **Contact:** ayushydv2353@gmail.com
-
-<style>
-  img {
-    max-width: 45% !important;
-    height: auto !important;
-    display: block;
-    margin: 8px auto !important;
-  }
-  h1, h2, h3, h4 { 
-    margin-top: 12px !important; 
-    margin-bottom: 6px !important; 
-  }
-  p, ul, ol, blockquote, pre { 
-    margin-top: 4px !important; 
-    margin-bottom: 4px !important; 
-    line-height: 1.4 !important;
-  }
-  hr {
-    margin: 10px 0 !important;
-  }
-</style>
-
 ---
 
 ## 1. Data Ingestion, Architecture & Quality Assurance Diagnostics
