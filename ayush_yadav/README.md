@@ -21,7 +21,12 @@ To initialize the workspace and construct an isolated runtime layout on your loc
 ```bash
 # Clone the project directory structure
 git clone https://github.com/ayushyadav10/Ayush_Yadav_Cobblestone.git
+
+# Move into the repository base
 cd Ayush_Yadav_Cobblestone
+
+# Navigate into the required submission directory structure
+cd ayush_yadav
 
 # Instantiate a localized virtual environment layer
 python -m venv myvenv
@@ -199,7 +204,7 @@ Performance benchmarks are tracked systematically across a three-tier model hier
 
 ## Programmatic AI Component Integration & Generative AI Dispatch
 
-### 🤖 Stage 6: Generative AI Commentary Dispatch Engine
+### Generative AI Commentary Dispatch Engine
 The pipeline integrates a zero-dependency, production-grade LLM execution layer (`src/llm_commentary.py`) tasked with converting quantitative model metrics and matrix positions into institutional-grade market morning notes.
 
 #### Key Engineering Features:
