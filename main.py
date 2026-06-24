@@ -24,7 +24,6 @@ logging.basicConfig(
 )
 log = logging.getLogger("main_pipeline")
 
-# Add 'src' to system path if needed (python runs in root so src is accessible)
 from src.prepare_data import run_data_preparation
 from src.qa_preprocessing import run_qa_preprocessing
 from src.feature_engineering import run_feature_engineering
