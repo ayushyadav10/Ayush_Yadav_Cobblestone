@@ -1,6 +1,7 @@
-echo # German Day-Ahead Electricity Price Forecasting Pipeline > README.md
-echo. >> README.md
-echo Project submission layout and source code are containerized within the main submission directory. >> README.md
-echo. >> README.md
-echo ### 📂 Submission Folder >> README.md
-echo Please navigate to the **[ayush_yadav](./ayush_yadav)** directory to access the complete pipeline, models, figures, and comprehensive research reports. >> README.md
+# German Day-Ahead Electricity Price Forecasting Pipeline
+
+Project submission layout, source code, data pipelines, and quantitative research models are fully containerized within the main submission directory.
+
+### 📂 Submission Folder
+
+Please navigate directly to the **[ayush_yadav](./ayush_yadav)** directory to access the complete end-to-end forecasting pipeline, generated figures, model evaluations, and comprehensive research reports.
