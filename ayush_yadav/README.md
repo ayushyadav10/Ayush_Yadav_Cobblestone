@@ -1,4 +1,3 @@
-```markdown
 # German Power Day-Ahead Price Forecasting & Trading View Pipeline
 
 **Author:** Ayush Yadav  
@@ -251,6 +250,3 @@ Our position is subject to invalidation if wind generation exceeds day-ahead for
 
 ```
 
-```
-
-```
