@@ -1,7 +1,8 @@
 # Technical Case Study: German Day-Ahead Power Price Forecasting & Prompt Curve Strategy
 
-**Author:** Ayush Yadav
+**Author:** Ayush Yadav  
 **Contact:** ayushydv2353@gmail.com
+
 ---
 
 ## 1. Data Ingestion, Architecture & Quality Assurance Diagnostics
@@ -72,17 +73,20 @@ In the German Day-Ahead market, the auction closes at 12:00 CET for the next day
 * **Intraday Slices (3 features):** Masks defining high-demand windows and solar crater price collapses.
 * **Cyclical Continuous Waves (6 features):** Trigonometric transformations preserving periodic continuity:
 
-$$\text{hour\_sin} = \sin\left(\frac{2\pi \cdot \text{hour}}{24}\right), \quad \text{hour\_cos} = \cos\left(\frac{2\pi \cdot \text{hour}}{24}\right)$$
+$$\text{hourSin} = \sin\left(\frac{2\pi \cdot \text{hour}}{24}\right), \quad \text{hourCos} = \cos\left(\frac{2\pi \cdot \text{hour}}{24}\right)$$
+
 * **Autoregressive Price Momentum (5 features):** Short-term point lags (`price_lag_1h`, `24h`, `48h`, `168h`) and trailing differentials (`price_delta_24h`).
 * **Rolling Variances (5 features):** Moving averages and standard deviation shifts ($\sigma_{24\text{h}}$, $\sigma_{168\text{h}}$) computed on back-shifted price vectors.
 * **Lagged Fundamentals (11 features):** Sourced physical asset metrics back-shifted by a 24-hour delay.
 * **Non-linear Merit-Order Transforms (2 features):** Formulated to model the non-linear supply curve:
 
 1. **Residual Load Squared ($D-1$):**
-$$\text{residual\_load\_lag24h\_squared} = \left(\frac{\text{load\_mwh\_lag24h} - \text{wind\_total\_mwh\_lag24h} - \text{solar\_mwh\_lag24h}}{10000}\right)^2$$
+   
+$$\text{residualLoadLag24hSquared} = \left(\frac{\text{loadMwhLag24h} - \text{windTotalMwhLag24h} - \text{solarMwhLag24h}}{10000}\right)^2$$
 
-2. **Renewable Penetration ($D-1$):**
-$$\text{renewable\_penetration\_lag24h} = \frac{\text{wind\_total\_mwh\_lag24h} + \text{solar\_mwh\_lag24h}}{\text{load\_mwh\_lag24h}}$$
+3. **Renewable Penetration ($D-1$):**
+   
+$$\text{renewablePenetrationLag24h} = \frac{\text{windTotalMwhLag24h} + \text{solarMwhLag24h}}{\text{loadMwhLag24h}}$$
 
 ---
 
