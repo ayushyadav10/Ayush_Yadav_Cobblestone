@@ -40,6 +40,9 @@ source myvenv/bin/activate
 # Install all pinned dependency packages from source
 pip install -r requirements.txt
 
+# Run Pipeline
+python main.py
+
 ```
 
 ### 2. Sourced Data Requirements
